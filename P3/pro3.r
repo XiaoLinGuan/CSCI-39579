@@ -1,6 +1,6 @@
 library(dplyr)
 
-data <- read.csv("C:/Users/xiaol/OneDrive/Summer2021/CSCI39579_Data_Visualization/Project/NYC_Dog_Licensing_Data.csv")
+data <- read.csv("C:/Users/xiaol/OneDrive/Summer2021/CSCI39579_Data_Visualization/Project/P3/NYC_Dog_Licensing_Data.csv")
 print(ncol(data))
 print(nrow(data))
 View(data)
