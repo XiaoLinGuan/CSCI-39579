@@ -329,7 +329,7 @@ ui <- fluidPage(
 			br(),
 			br(),
 
-         # Images of the airports.
+			# Images of the airports.
 			tags$div(id = "images",
 				fluidRow(
 					column(id = "jfk", align = "center", width = 4,
@@ -370,8 +370,8 @@ ui <- fluidPage(
 				)
 			),
 
-         br(),
-         br(),
+			br(),
+			br(),
 
          leaflet(height = 800) %>% addTiles() %>% setView(-74.00597, 40.71427, 11) %>%
          addMarkers(
