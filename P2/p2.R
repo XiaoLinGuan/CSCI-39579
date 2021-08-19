@@ -115,10 +115,10 @@ ui <- fluidPage(
 				background: linear-gradient(to bottom, #a9a9a9, #696969);
 			}
 
-         #barChartSidebar{
-            background: black;
-            border: 3px solid #ffcc99;
-         }
+			#barChartSidebar{
+				background: black;
+				border: 3px solid #ffcc99;
+			}
 			
 			#barOption1{
  				padding-left: 15px;
