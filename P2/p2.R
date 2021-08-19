@@ -67,19 +67,19 @@ ui <- fluidPage(
 				background-color: #006400 !important;
 			}
 
-         .tabbable > .nav > li > a {
-            color: #6495ed;
-            padding-left: 25px;
-            padding-right: 25px;
-            border-top: 2px solid #367588;
-            border-left: 5px solid #367588;
-            border-right: 5px solid #367588;
-         }
+			.tabbable > .nav > li > a {
+				color: #6495ed;
+				padding-left: 25px;
+				padding-right: 25px;
+				border-top: 2px solid #367588;
+				border-left: 5px solid #367588;
+				border-right: 5px solid #367588;
+			}
 
-         .tabbable > .nav > li[class=active] > a{
-            color: #324ab2;
-            background-color: #faf0e6; 
-         }
+			.tabbable > .nav > li[class=active] > a{
+				color: #324ab2;
+				background-color: #faf0e6; 
+			}
 
 			.dataTables_wrapper .dataTables_length,
 			.dataTables_wrapper .dataTables_filter,
