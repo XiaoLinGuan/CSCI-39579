@@ -326,8 +326,8 @@ ui <- fluidPage(
 
 		# First Tab.
 		tabPanel(id = "tab1_allimages", tags$h2("Images", icon("image")),
-         br(),
-         br(),
+			br(),
+			br(),
 
          # Images of the airports.
 			tags$div(id = "images",
