@@ -36,23 +36,23 @@ ui <- fluidPage(
             text-align: center;
          }
 
-         #jfk{
-            color: #98ff98;
-            border-radius: 15px;
-            border: 3px solid #98ff98;
-         }
+			#jfk{
+				color: #98ff98;
+				border-radius: 15px;
+				border: 3px solid #98ff98;
+			}
 
-         #ewr{
-            color: #88d8c0;
-            border-radius: 15px;
-            border: 3px solid #88d8c0;
-         }
+			#ewr{
+				color: #88d8c0;
+				border-radius: 15px;
+				border: 3px solid #88d8c0;
+			}
 
-         #lga{
-            color: #b2ec5d;
-            border-radius: 15px;
-            border: 3px solid #b2ec5d;
-         }
+			#lga{
+				color: #b2ec5d;
+				border-radius: 15px;
+				border: 3px solid #b2ec5d;
+			}
 
 			#table{
 				color: #c0c0c0;
