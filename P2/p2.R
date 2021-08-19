@@ -310,8 +310,8 @@ ui <- fluidPage(
 				background: #555555;
 				border: 2px solid tomato;
 			}"
-      )
-   ),
+		)
+	),
    
    # Name of the web app.
    tags$head(HTML("<title>Flight Delays Dataset and Graphs</title>")),
@@ -373,6 +373,7 @@ ui <- fluidPage(
 			br(),
 			br(),
 
+			# The map showing the exact location of the three airports.
 			leaflet(height = 800) %>% addTiles() %>% setView(-74.00597, 40.71427, 11) %>%
 			addMarkers(
 				lng = -73.780968, 
@@ -418,18 +419,18 @@ ui <- fluidPage(
 			)
 		),
 
-      # Second Tab.
+		# Second Tab.
 		tabPanel(id = "tab2_dataset", tags$h2("Dataset", icon("table")),
 			withLoader(DT::dataTableOutput("table"), type = "image", loader = "loading1.gif"),
 			downloadButton(outputId = "dlData", label = "Download.csv", icon = shiny::icon("download"))
 		),
 
-      # Third Tab.
+		# Third Tab.
 		tabPanel(id = "tab3_barchart", tags$h2("Bar Chart", icon("chart-bar")), 
 
 			br(),
 
-         sidebarLayout(
+			sidebarLayout(
 
 				# Bar Chart Options. 
 				sidebarPanel(id = "barChartSidebar",
@@ -457,21 +458,21 @@ ui <- fluidPage(
 							selectize = FALSE,
 							multiple = FALSE)
 					)
-         	),			
+				),			
 
 				# Bar Chart.	
-            mainPanel(withLoader(plotlyOutput("bar"), type = "image", loader = "loading2.gif"))
+				mainPanel(withLoader(plotlyOutput("bar"), type = "image", loader = "loading2.gif"))
 			)
 		),
 
-      # Fourth Tab.
+		# Fourth Tab.
 		tabPanel(id = "tab4_piechart", tags$h2("Pie Chart", icon("chart-pie")), 
 			
 			br(),
 
 			sidebarLayout(
 
-				# Bar Chart Options.
+				# Pie Chart Options.
 				sidebarPanel(id = "pieChartSidebar",
 					
 					# Choose a variable to be used for the pie chart.
@@ -534,9 +535,8 @@ ui <- fluidPage(
 			)
 		),
 
-      # Fifth Tab.
+		# Fifth Tab.
 		tabPanel(id = "tab5_linegraph", tags$h2("Line Graph", icon("chart-line")),
-		shinyFeedback::useShinyFeedback(),
 
 			br(),
 
