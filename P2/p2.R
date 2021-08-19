@@ -660,26 +660,26 @@ ui <- fluidPage(
 # Server of the web app.
 server <- function(input, output) {
 
-   # Read the file.
-   mydata <- reactive({
-      read.csv("dataset.csv")
-   }) 
+	# Read the file.
+	mydata <- reactive({
+		read.csv("dataset.csv")
+	}) 
   
-   # Show the dataset.
-   output$table <- DT::renderDataTable({
-      DT::datatable(
+	# Show the dataset.
+	output$table <- DT::renderDataTable({
+		DT::datatable(
 			mydata(),
 			options = list(
 				searchHighlight = TRUE, 
 				lengthMenu = c(10, 20, 30, 40)
 			),
 			selection = "single", # Enable single row selection.
-      	filter = "top") %>% 
+			filter = "top") %>% 
 			formatStyle(
 				all(),
 				backgroundColor = "black"
 			)	
-   })
+	})
 
 	# Download dataset.
 	output$dlData <- downloadHandler(
