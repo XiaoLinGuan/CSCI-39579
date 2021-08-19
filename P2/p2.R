@@ -24,17 +24,17 @@ ui <- fluidPage(
    # CSS of the UI.
    tags$style(
       HTML(
-         "body{
-            background-color: black;
-         }
+			"body{
+				background-color: black;
+			}
 
-         #mainHeading{
-            height: 50px;
-            color: #ffcc99;
-            font-size: 43px;
-            font-style: bold;
-            text-align: center;
-         }
+			#mainHeading{
+				height: 50px;
+				color: #ffcc99;
+				font-size: 43px;
+				font-style: bold;
+				text-align: center;
+			}
 
 			#jfk{
 				color: #98ff98;
