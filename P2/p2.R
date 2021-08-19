@@ -373,49 +373,49 @@ ui <- fluidPage(
 			br(),
 			br(),
 
-         leaflet(height = 800) %>% addTiles() %>% setView(-74.00597, 40.71427, 11) %>%
-         addMarkers(
-            lng = -73.780968, 
-            lat = 40.641766,
-            label = "JFK Airport",
-            labelOptions = labelOptions(noHide = T, direction = "bottom",
-               style = list(
-                  "color" = "#3cb371",
-                  "font-family" = "serif",
-                  "font-style" = "bold",
-                  "font-size" = "22px",
-                  "border" = "5px solid #3cb371"
-               )
-            )
-         ) %>%
-         addMarkers(
-            lng = -74.175,
-            lat = 40.6897222222,
-            label = "EWR Airport",
-            labelOptions = labelOptions(noHide = T, direction = "bottom",
-               style = list(
-                  "color" = "#43b3ae",
-                  "font-family" = "serif",
-                  "font-style" = "bold",
-                  "font-size" = "22px",
-                  "border" = "5px solid #43b3ae"
-               )
-            )
-         ) %>%
-         addMarkers(
-            lng = -73.8719444444,
-            lat = 40.7747222222,
-            label = "LGA Airport",
-            labelOptions = labelOptions(noHide = T, Direction = "bottom",
-               style = list(
-                  "color" = "#8bbe1b",
-                  "font-family" = "serif",
-                  "font-style" = "bold",
-                  "font-size" = "22px",
-                  "border" = "5px solid #8bb31b"
-               )
-            )
-         )
+			leaflet(height = 800) %>% addTiles() %>% setView(-74.00597, 40.71427, 11) %>%
+			addMarkers(
+				lng = -73.780968, 
+				lat = 40.641766,
+				label = "JFK Airport",
+				labelOptions = labelOptions(noHide = T, direction = "bottom",
+					style = list(
+						"color" = "#3cb371",
+						"font-family" = "serif",
+						"font-style" = "bold",
+						"font-size" = "22px",
+						"border" = "5px solid #3cb371"
+					)
+				)
+			) %>%
+			addMarkers(
+				lng = -74.175,
+				lat = 40.6897222222,
+				label = "EWR Airport",
+				labelOptions = labelOptions(noHide = T, direction = "bottom",
+					style = list(
+						"color" = "#43b3ae",
+						"font-family" = "serif",
+						"font-style" = "bold",
+						"font-size" = "22px",
+						"border" = "5px solid #43b3ae"
+					)
+				)
+			) %>%
+			addMarkers(
+				lng = -73.8719444444,
+				lat = 40.7747222222,
+				label = "LGA Airport",
+				labelOptions = labelOptions(noHide = T, Direction = "bottom",
+					style = list(
+						"color" = "#8bbe1b",
+						"font-family" = "serif",
+						"font-style" = "bold",
+						"font-size" = "22px",
+						"border" = "5px solid #8bb31b"
+					)
+				)
+			)
 		),
 
       # Second Tab.
