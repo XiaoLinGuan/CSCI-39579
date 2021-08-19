@@ -324,51 +324,51 @@ ui <- fluidPage(
 	tabsetPanel(id = "alltabs",
 		selected = NULL,
 
-      # First Tab.
+		# First Tab.
 		tabPanel(id = "tab1_allimages", tags$h2("Images", icon("image")),
          br(),
          br(),
 
          # Images of the airports.
-         tags$div(id = "images",
-            fluidRow(
-               column(id = "jfk", align = "center", width = 4,
-                  br(),
-                  img(src = 'jfk1.png', alt = "JFK airport logo", width = 400, height = 200),
-                  br(),
-                  br(),
-                  img(src = 'jfk2.png', alt = "JFK airport", width = 400, height = 300),
-                  br(),
-                  br(),
-                  h3(tags$b("Location: ", style = "color: #50c878"), "Queens, New York City, U.S."),
-                  h3(tags$b("Opened: ", style = "color: #50c878"), "July 1, 1948")
-               ),
-               
-               column(id = "ewr", align = "center", width = 4,
-                  br(),
-                  img(src = 'ewr1.png', alt = "EWR airport logo", width = 400, height = 200),
-                  br(),
-                  br(),
-                  img(src = 'ewr2.png', alt = "EWR airport", width = 400, height = 300),
-                  br(),
-                  br(),
-                  h3(tags$b("Location: ", style = "color: #43b3ae"), "Newark and Elizabeth, New Jersey, U.S."),
-                  h3(tags$b("Opened: ", style = "color: #43b3ae"), "October 1, 1928")
-               ),
-               
-               column(id = "lga", align = "center", width = 4,
-                  br(),
-                  img(src = 'lga1.png', alt = "LGA airport logo", width = 400, height = 200),
-                  br(),
-                  br(),
-                  img(src = 'lga2.png', alt = "LGA airport", width = 400, height = 300),
-                  br(),
-                  br(),
-                  h3(tags$b("Location: ", style = "color: #8bbe1b"), "East Elmhurst, Queens"),
-                  h3(tags$b("Opened: ", style = "color: #8bbe1b"), "December 2, 1939")
-               )
-            )
-         ),
+			tags$div(id = "images",
+				fluidRow(
+					column(id = "jfk", align = "center", width = 4,
+						br(),
+						img(src = 'jfk1.png', alt = "JFK airport logo", width = 400, height = 200),
+						br(),
+						br(),
+						img(src = 'jfk2.png', alt = "JFK airport", width = 400, height = 300),
+						br(),
+						br(),
+						h3(tags$b("Location: ", style = "color: #50c878"), "Queens, New York City, U.S."),
+						h3(tags$b("Opened: ", style = "color: #50c878"), "July 1, 1948")
+					),
+					
+					column(id = "ewr", align = "center", width = 4,
+						br(),
+						img(src = 'ewr1.png', alt = "EWR airport logo", width = 400, height = 200),
+						br(),
+						br(),
+						img(src = 'ewr2.png', alt = "EWR airport", width = 400, height = 300),
+						br(),
+						br(),
+						h3(tags$b("Location: ", style = "color: #43b3ae"), "Newark and Elizabeth, New Jersey, U.S."),
+						h3(tags$b("Opened: ", style = "color: #43b3ae"), "October 1, 1928")
+					),
+					
+					column(id = "lga", align = "center", width = 4,
+						br(),
+						img(src = 'lga1.png', alt = "LGA airport logo", width = 400, height = 200),
+						br(),
+						br(),
+						img(src = 'lga2.png', alt = "LGA airport", width = 400, height = 300),
+						br(),
+						br(),
+						h3(tags$b("Location: ", style = "color: #8bbe1b"), "East Elmhurst, Queens"),
+						h3(tags$b("Opened: ", style = "color: #8bbe1b"), "December 2, 1939")
+					)
+				)
+			),
 
          br(),
          br(),
