@@ -21,9 +21,9 @@ library(shinycustomloader)
 # Design of the user interface.
 ui <- fluidPage(
    
-   # CSS of the UI.
-   tags$style(
-      HTML(
+	# CSS of the UI.
+	tags$style(
+		HTML(
 			"body{
 				background-color: black;
 			}
