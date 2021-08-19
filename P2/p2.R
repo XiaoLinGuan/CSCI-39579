@@ -36,20 +36,6 @@ ui <- fluidPage(
             text-align: center;
          }
 
-         .tabbable > .nav > li > a {
-            color: #6495ed;
-            padding-left: 25px;
-            padding-right: 25px;
-            border-top: 2px solid #367588;
-            border-left: 5px solid #367588;
-            border-right: 5px solid #367588;
-         }
-
-         .tabbable > .nav > li[class=active] > a{
-            color: #324ab2;
-            background-color: #faf0e6; 
-         }
-
          #jfk{
             color: #98ff98;
             border-radius: 15px;
@@ -80,6 +66,20 @@ ui <- fluidPage(
 			table.dataTable tr.selected td{
 				background-color: #006400 !important;
 			}
+
+         .tabbable > .nav > li > a {
+            color: #6495ed;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-top: 2px solid #367588;
+            border-left: 5px solid #367588;
+            border-right: 5px solid #367588;
+         }
+
+         .tabbable > .nav > li[class=active] > a{
+            color: #324ab2;
+            background-color: #faf0e6; 
+         }
 
 			.dataTables_wrapper .dataTables_length,
 			.dataTables_wrapper .dataTables_filter,
@@ -721,7 +721,7 @@ server <- function(input, output) {
 
    # Show the Bar Chart.
 	output$bar <- renderPlotly({
-      ggplot(mydata(), barChartOrder()) + 
+		ggplot(mydata(), barChartOrder()) + 
          geom_bar(stat = "count") +
          labs(title = "Delayed Flights of different airlines in JFK, EWR, and LGA airports", 
 				fill = "Airline",
@@ -729,8 +729,8 @@ server <- function(input, output) {
 				y = "Count") + 
 			barChartColor() +
          theme(plot.title = element_text(size = 17, face = "bold", color = "white"),
-            plot.background = element_rect(fill = "black"),
-            panel.background = element_rect(fill = "black"),
+				plot.background = element_rect(fill = "black"),
+				panel.background = element_rect(fill = "black"),
 				panel.border = element_rect(color = "white", fill = NA, size = 2),
 				axis.text = element_text(color = "white", size = 12),
 				axis.title = element_text(color = "white", size = 17),
