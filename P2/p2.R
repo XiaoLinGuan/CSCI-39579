@@ -20,7 +20,7 @@ library(shinycustomloader)
 
 # Design of the user interface.
 ui <- fluidPage(
-   
+
 	# CSS of the UI.
 	tags$style(
 		HTML(
@@ -56,7 +56,7 @@ ui <- fluidPage(
 
 			#table{
 				color: #c0c0c0;
-				font-size: 16px; 
+				font-size: 16px;
 			}
 
 			table.dataTable thead tr{
@@ -78,7 +78,7 @@ ui <- fluidPage(
 
 			.tabbable > .nav > li[class=active] > a{
 				color: #324ab2;
-				background-color: #faf0e6; 
+				background-color: #faf0e6;
 			}
 
 			.dataTables_wrapper .dataTables_length,
@@ -109,7 +109,7 @@ ui <- fluidPage(
   				border: 1px solid #cc4f4f;
 			}
 
-			.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+			.dataTables_wrapper .dataTables_paginate .paginate_button.current,
 			.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
 				color: #e3ab57 !important;
 				background: linear-gradient(to bottom, #a9a9a9, #696969);
@@ -119,25 +119,25 @@ ui <- fluidPage(
 				background: black;
 				border: 3px solid #ffcc99;
 			}
-			
+
 			#barOption1{
  				padding-left: 15px;
  				padding-right: 15px;
-				border: 1px dotted #ffcc99; 
+				border: 1px dotted #ffcc99;
 			}
-			
+
 			#barColor{
 				color: white;
 				font-size: 18px;
 				background-color: black;
 			}
-			
+
 			#barOption2{
 				padding-left: 15px;
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-			
+
 			#barOrder{
 				color: white;
 				font-size: 18px;
@@ -158,7 +158,7 @@ ui <- fluidPage(
 			#pieData{
 				color: white;
 				font-size: 18px;
-				background-color: black;	
+				background-color: black;
 			}
 
 			#pieOption2{
@@ -166,64 +166,64 @@ ui <- fluidPage(
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-			
+
 			#pieColor{
 				color: white;
 				font-size: 18px;
-				background-color: black;	
+				background-color: black;
 			}
-			
+
 			#pieOption3{
 				padding-left: 15px;
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-			
+
 			#pieShape{
 				color: white;
 				font-size: 18px;
-				background-color: black;				
+				background-color: black;
 			}
-			
+
 			#pieOption4{
 				padding-left: 15px;
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-			
+
 			#lineGraphSidebar{
 				background: black;
 				border: 3px solid #ffcc99;
 			}
-	
+
 			#lineOption1{
 				padding-left: 15px;
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-			
+
 			#lineColor{
 				color: white;
 				font-size: 16px;
 				background-color: black;
 			}
-						
+
 			#lineOption2{
 				padding-left: 15px;
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-						
+
 			#lineOption3{
 				padding-left: 15px;
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-			
+
 			#lineShape{
 				color: white;
 				font-size: 16px;
-				background-color: black;				
+				background-color: black;
 			}
 
 			#pointOption1{
@@ -231,31 +231,31 @@ ui <- fluidPage(
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-			
+
 			#pointOption2{
 				padding-left: 15px;
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-			
+
 			#pointColor{
 				color: white;
 				font-size: 16px;
-				background-color: black;	
+				background-color: black;
 			}
-			
+
 			#pointOption3{
 				padding-left: 15px;
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-					
+
 			#pointOption4{
 				padding-left: 15px;
 				padding-right: 15px;
 				border: 1px dotted #ffcc99;
 			}
-			
+
 			#pointShape{
 				color: white;
 				font-size: 16px;
@@ -278,7 +278,7 @@ ui <- fluidPage(
 			.irs-line{
 				border: 1px solid #ffcc99;
 			}
-			
+
 			.irs-grid-text{
 				color: white;
 				font-size: 12px;
@@ -289,20 +289,20 @@ ui <- fluidPage(
 				font-size: 13px;
 				background: #555555;
 			}
-			
+
 			.irs-max{
 				color: #ffcc99;
 				font-size: 13px;
 				background: #555555;
 			}
-			
+
 			.irs-single{
 				color: #ffcc99;
 				font-size: 10px;
 				background: #555555;
 				border: 1px solid tomato;
 			}
-			
+
 			.irs-slider{
 				top: 20px;
 				width: 18px;
@@ -312,13 +312,13 @@ ui <- fluidPage(
 			}"
 		)
 	),
-   
+
    # Name of the web app.
    tags$head(HTML("<title>Flight Delays Dataset and Graphs</title>")),
-   
+
    # Title.
    titlePanel(h1(id = "mainHeading", icon("plane-departure"), "Flight Delays in three airports: JFK, EWR, and LGA", icon("plane-arrival"))),
-      
+
    # All tabs.
    # By default, the first tab will be selected.
 	tabsetPanel(id = "alltabs",
@@ -343,7 +343,7 @@ ui <- fluidPage(
 						h3(tags$b("Location: ", style = "color: #50c878"), "Queens, New York City, U.S."),
 						h3(tags$b("Opened: ", style = "color: #50c878"), "July 1, 1948")
 					),
-					
+
 					column(id = "ewr", align = "center", width = 4,
 						br(),
 						img(src = 'ewr1.png', alt = "EWR airport logo", width = 400, height = 200),
@@ -355,7 +355,7 @@ ui <- fluidPage(
 						h3(tags$b("Location: ", style = "color: #43b3ae"), "Newark and Elizabeth, New Jersey, U.S."),
 						h3(tags$b("Opened: ", style = "color: #43b3ae"), "October 1, 1928")
 					),
-					
+
 					column(id = "lga", align = "center", width = 4,
 						br(),
 						img(src = 'lga1.png', alt = "LGA airport logo", width = 400, height = 200),
@@ -376,7 +376,7 @@ ui <- fluidPage(
 			# The map showing the exact location of the three airports.
 			leaflet(height = 800) %>% addTiles() %>% setView(-74.00597, 40.71427, 11) %>%
 			addMarkers(
-				lng = -73.780968, 
+				lng = -73.780968,
 				lat = 40.641766,
 				label = "JFK Airport",
 				labelOptions = labelOptions(noHide = T, direction = "bottom",
@@ -426,20 +426,20 @@ ui <- fluidPage(
 		),
 
 		# Third Tab.
-		tabPanel(id = "tab3_barchart", tags$h2("Bar Chart", icon("chart-bar")), 
+		tabPanel(id = "tab3_barchart", tags$h2("Bar Chart", icon("chart-bar")),
 
 			br(),
 
 			sidebarLayout(
 
-				# Bar Chart Options. 
+				# Bar Chart Options.
 				sidebarPanel(id = "barChartSidebar",
 
 					# Choose a color palette.
 					# User can change the colors of the bars.
-					tags$div(id = "barOption1", 
+					tags$div(id = "barOption1",
 						selectInput("barColor", tags$h3("Please pick a color palette:", style = "font-size: 22px; color: #ffcc99"),
-							c("Default" = "d", "Palette 1" = "bar1", "Palette 2" = "bar2", "Palette 3" = "bar3", 
+							c("Default" = "d", "Palette 1" = "bar1", "Palette 2" = "bar2", "Palette 3" = "bar3",
 								"Palette 4" = "bar4", "Palette 5" = "bar5", "Palette 6" = "bar6"),
 							selected = "d",
 							selectize = FALSE,
@@ -458,23 +458,23 @@ ui <- fluidPage(
 							selectize = FALSE,
 							multiple = FALSE)
 					)
-				),			
+				),
 
-				# Bar Chart.	
+				# Bar Chart.
 				mainPanel(withLoader(plotlyOutput("bar"), type = "image", loader = "loading2.gif"))
 			)
 		),
 
 		# Fourth Tab.
-		tabPanel(id = "tab4_piechart", tags$h2("Pie Chart", icon("chart-pie")), 
-			
+		tabPanel(id = "tab4_piechart", tags$h2("Pie Chart", icon("chart-pie")),
+
 			br(),
 
 			sidebarLayout(
 
 				# Pie Chart Options.
 				sidebarPanel(id = "pieChartSidebar",
-					
+
 					# Choose a variable to be used for the pie chart.
 					# Users can choose either departure airports or arrival airports.
 					tags$div(id = "pieOption1",
@@ -503,7 +503,7 @@ ui <- fluidPage(
 
 					# Choose the shape of the chart.
 					# User can choose either a regular pie chart or a donut chart.
-					tags$div(id = "pieOption3", 
+					tags$div(id = "pieOption3",
 						selectInput("pieShape", tags$h3("Please select a shape:", style = "font-size: 22px; color: #ffcc99"),
 							c("Default(Pie Chart)" = "regularChart", "Donut Chart" = "donutChart"),
 							selected = "regularChart",
@@ -515,12 +515,12 @@ ui <- fluidPage(
 					br(),
 
 					# Choose the outline style of the chart.
-					# User can choose to add a border around each slice or no-border at all. 
+					# User can choose to add a border around each slice or no-border at all.
 					tags$div(id = "pieOption4",
 						radioButtons("pieBorder", tags$h3("Please choose one of the outline options:", style = "font-size: 22px; color: #ffcc99"),
 							choiceNames = list(
 								tags$div(id = "border1", "With Border",
-									style = "font-size: 18px; color: white"), 
+									style = "font-size: 18px; color: white"),
 								tags$div(id = "border0", "Without Border",
 									style = "font-size: 18px; color: white")
 							),
@@ -546,14 +546,14 @@ ui <- fluidPage(
 				sidebarPanel(id = "lineGraphSidebar",
 
 					# Options of the line.
-					tags$div(id = "lineOptions",		
-						tags$h2("Line:", style = "color: #ffcc99"),	
+					tags$div(id = "lineOptions",
+						tags$h2("Line:", style = "color: #ffcc99"),
 
 						# Choose the line's color.
-						# User can change the color of the line.	
+						# User can change the color of the line.
 						tags$div(id = "lineOption1",
 							selectInput("lineColor", tags$h3("Please pick a color:", style = "font-size: 20px; color: #ffcc99"),
-								c("Red" = "lineRed", "Orange" = "lineOrange", "Yellow" = "lineYellow", 
+								c("Red" = "lineRed", "Orange" = "lineOrange", "Yellow" = "lineYellow",
 									"Green" = "lineGreen", "Blue" = "lineBlue", "Purple" = "linePurple"),
 								selected = "colorRed",
 								selectize = FALSE,
@@ -643,18 +643,18 @@ ui <- fluidPage(
 
 						# Choose the point's shape.
 						# User can change the shape of the point.
-						tags$div(id = "pointOption4", 
+						tags$div(id = "pointOption4",
 							selectInput("pointShape", tags$h3("Please select a shape:", style = "font-size: 20px; color: #ffcc99"),
 								c("Circle" = "pointCircle", "Square" = "pointSquare", "Triangle" = "pointTriangle"),
 								selected = "pointCircle",
 								selectize = FALSE,
-								multiple = FALSE)							
+								multiple = FALSE)
 						)
-					)				
+					)
 				)
 			)
 		)
-	)  
+	)
 )
 
 # Server of the web app.
@@ -663,22 +663,22 @@ server <- function(input, output) {
 	# Read the file.
 	mydata <- reactive({
 		read.csv("dataset.csv")
-	}) 
-  
+	})
+
 	# Show the dataset.
 	output$table <- DT::renderDataTable({
 		DT::datatable(
 			mydata(),
 			options = list(
-				searchHighlight = TRUE, 
+				searchHighlight = TRUE,
 				lengthMenu = c(10, 20, 30, 40)
 			),
 			selection = "single", # Enable single row selection.
-			filter = "top") %>% 
+			filter = "top") %>%
 			formatStyle(
 				all(),
 				backgroundColor = "black"
-			)	
+			)
 	})
 
 	# Download dataset.
@@ -705,7 +705,7 @@ server <- function(input, output) {
 			scale_fill_manual(values = as.vector(stepped(16)))
 		} else if(input$barColor == "bar6"){
 			scale_fill_manual(values = as.vector(glasbey(16)))
-		} 
+		}
 	})
 
 	# Get Bar Order.
@@ -719,16 +719,16 @@ server <- function(input, output) {
 		}
 	})
 
-   # Show the Bar Chart.
+	# Show the Bar Chart.
 	output$bar <- renderPlotly({
-		ggplot(mydata(), barChartOrder()) + 
-         geom_bar(stat = "count") +
-         labs(title = "Delayed Flights of different airlines in JFK, EWR, and LGA airports", 
+		ggplot(mydata(), barChartOrder()) +
+			geom_bar(stat = "count") +
+			labs(title = "Delayed Flights of different airlines in JFK, EWR, and LGA airports",
 				fill = "Airline",
 				x = "Airlines",
-				y = "Count") + 
+				y = "Count") +
 			barChartColor() +
-         theme(plot.title = element_text(size = 17, face = "bold", color = "white"),
+			theme(plot.title = element_text(size = 17, face = "bold", color = "white"),
 				plot.background = element_rect(fill = "black"),
 				panel.background = element_rect(fill = "black"),
 				panel.border = element_rect(color = "white", fill = NA, size = 2),
@@ -737,7 +737,7 @@ server <- function(input, output) {
 				legend.background = element_rect(fill = "#4f4f4f", color = "white"),
 				legend.title = element_text(color = "white", size = 13),
 				legend.text = element_text(color = "white", size = 10)
-         ) 
+			)
 	})
 
 	# Get Pie Chart Data.
@@ -758,7 +758,7 @@ server <- function(input, output) {
 			new_col <- vector()
 			while(i <= nrow(pieSubsetData2)){
 				# Any destination airports with less than 400 delays will be grouped together.
-				if(pieSubsetData2[i, 2] < 400){	
+				if(pieSubsetData2[i, 2] < 400){
 					new_col[i] <- "Others"
 				} else{
 					new_col[i] <- toString(pieSubsetData2[i, 1])
@@ -783,7 +783,7 @@ server <- function(input, output) {
 		}  else if(input$pieColor == "pie2"){
 			palette2 <- c("aquamarine", "aliceblue", "azure1", "bisque3", "brown2",
 								"burlywood1", "cadetblue2", "chocolate1", "chartreuse1", "coral",
-								"cholocate4", "cornflowerblue", "cyan4", "gold1", "gray30", 
+								"cholocate4", "cornflowerblue", "cyan4", "gold1", "gray30",
 								"green2", "greenyellow", "ivory3", "lightpink", "maroon2",
 								"mistyrose4", "orchid3", "peachpuff1", "rosybrown3", "seashell2",
 								"seashell3", "sienna3", "skyblue2", "slateblue4", "slategray3",
@@ -793,7 +793,7 @@ server <- function(input, output) {
 								"lawngreen", "indianred1", "hotpink2", "midnightblue", "mediumseagreen",
 								"mediumpurple2", "maroon", "magneta1", "lightsalmon4", "palegreen3",
 								"orangered1", "orange2", "olivedrab", "navy", "royalblue1",
-								"plum2", "yellow3", "snow4", "thistle1", "yellowgreen", 
+								"plum2", "yellow3", "snow4", "thistle1", "yellowgreen",
 								"red", "black", "90BE6D", "C0FDFF", "5A189A",
 								"#E56B6F", "#2EC4B6", "#4CC9F0", "#FEEAFA", "#708D81")
 		} else if(input$pieColor == "pie4"){
@@ -833,12 +833,12 @@ server <- function(input, output) {
 			fig <- plot_ly(pieChartData(), labels = ~origin, values = ~count, type = "pie",
 
 				# Style of the text contained in each slice.
-				textposition = "inside",	
+				textposition = "inside",
 				textinfo = "label+percent",
 				insidetextfont = list(size = 14),
 
 				# Style of each slice.
-				marker = list(	
+				marker = list(
 					colors = pieChartColor(),	# The colors of the slices.
 					line = pieChartBorder()	# The line that separates each slice.
 				),
@@ -847,7 +847,7 @@ server <- function(input, output) {
 				hole = pieChartShape()
 
 			) %>% layout(
-				title = list( 
+				title = list(
 					text = "Flight Delays by departure airports in January, 2013",
 					font = list(
 						size = 16,
@@ -856,9 +856,9 @@ server <- function(input, output) {
 				),
 
 				# Pie Chart's Legend.
-				legend = list(	
+				legend = list(
 					# Legend's title.
-					title = list(	
+					title = list(
 						text = "Airports",
 						font = list(
 							size = 14,
@@ -867,12 +867,12 @@ server <- function(input, output) {
 					),
 
 					# Legend's info.
-					font = list(	
+					font = list(
 						size = 12,
 						color = "white"
-					),		
+					),
 
-					# Legend Style.			
+					# Legend Style.
 					borderwidth = 1,
 					bgcolor = "#4f4f4f",
 					bordercolor = "white"
@@ -890,12 +890,12 @@ server <- function(input, output) {
 			fig <- plot_ly(pieChartData(), labels = ~destination_modified, values = ~count, type = "pie",
 
 				# Style of the text contained in each slice.
-				textposition = "inside",	
+				textposition = "inside",
 				textinfo = "label+percent",
 				insidetextfont = list(size = 14),
 
 				# Style of each slice.
-				marker = list(	
+				marker = list(
 					colors = pieChartColor(),	# The colors of the slices.
 					line = pieChartBorder()	# The line that separates each slice.
 				),
@@ -904,7 +904,7 @@ server <- function(input, output) {
 				hole = pieChartShape()
 
 			) %>% layout(
-				title = list( 
+				title = list(
 					text = "Flight Delays by arrival airports in January, 2013",
 					font = list(
 						size = 16,
@@ -913,9 +913,9 @@ server <- function(input, output) {
 				),
 
 				# Pie Chart's Legend.
-				legend = list(	
+				legend = list(
 					# Legend's title.
-					title = list(	
+					title = list(
 						text = "Airports",
 						font = list(
 							size = 14,
@@ -924,12 +924,12 @@ server <- function(input, output) {
 					),
 
 					# Legend's info.
-					font = list(	
+					font = list(
 						size = 12,
 						color = "white"
-					),		
+					),
 
-					# Legend Style.			
+					# Legend Style.
 					borderwidth = 1,
 					bgcolor = "#4f4f4f",
 					bordercolor = "white"
@@ -937,10 +937,10 @@ server <- function(input, output) {
 
 				# Hide the X-axis and Y-axis.
 				xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
-				yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),				
+				yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
 
 				# Set Pie Chart's background color to black.
-				paper_bgcolor = "black"				
+				paper_bgcolor = "black"
 			)
 		}
 		fig
@@ -979,7 +979,7 @@ server <- function(input, output) {
 	# Get Line Shape.
 	lineGraphLineShape <- reactive({
 		if(input$lineShape == "solidLine"){
-			lShape <- "solid" 
+			lShape <- "solid"
 		} else if(input$lineShape == "dashedLine"){
 			lShape <- "dashed"
 		} else if(input$lineShape == "dottedLine"){
@@ -1030,7 +1030,7 @@ server <- function(input, output) {
 	# Show the Line Graph.
 	output$line <- renderPlotly({
 		ggplot(lineGraphData(), aes(x = day, y = count, group = 1)) +
-			geom_line(color = lineGraphLineColor(), size = lineGraphLineWidth(), linetype = lineGraphLineShape()) + 
+			geom_line(color = lineGraphLineColor(), size = lineGraphLineWidth(), linetype = lineGraphLineShape()) +
 			lineGraphPoint() +
 			labs(title = "Delayed Flights from JFK, EWR, and LGA in January, 2013",
 				x = "Date",
