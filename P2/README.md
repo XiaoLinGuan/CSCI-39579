@@ -44,7 +44,7 @@ Things that the user can modify in the chart:
 * The color palette of the bars.
 * Sort the bars from ascending or descending height.
 
-### Fourth Tab: Pie Chart![piechart](https://img.icons8.com/office/16/000000/pie-chart.png)
+### Fourth Tab: Pie Chart![piechart](https://img.icons8.com/office/30/000000/pie-chart.png)
 
 By clicking on the fourth tab `Pie Chart`, user will be able to compare the count of delayed flights from **departure** airports(JFK, EWR, LGA) or **arrival** airports(ATL, ORD, BOS, MCO,...).  
 Things that the user can modify in the chart:
