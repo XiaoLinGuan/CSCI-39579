@@ -1,5 +1,5 @@
 
-# CSCI-39579
+# CSCI-39579 Data Visualization
 
 **Project#2**: A simple Web App created with *R GGPlot2* and *Plotly*.  
 Flight Delays from three airports: JFK, EWR, and LGA in January, 2013.
