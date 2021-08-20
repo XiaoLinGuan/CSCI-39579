@@ -37,9 +37,9 @@ User will be able to view the images of the airports and look at their exact loc
 By clicking on the second tab `Dataset`, user will be able to view the dataset containing all the information used in this web app such as carriers, origin of the flight, arrival of the flight, the dates and etc.  
 User can also download the dataset by clicking `Download.csv` in the web app.
 
-### Third Tab: Bar Chart
+### Third Tab: Bar Chart:bar_chart::
 
-By clicking on the third tab 'Bar Chart`, user will be able to view the count of delayed flights from different airlines in the month of January of 2013.  
+By clicking on the third tab `Bar Chart`, user will be able to view the count of delayed flights from different airlines in the month of January of 2013.  
 Things that the user can modify in the chart:
 * The color palette of the bars.
 * Sort the bars from ascending or descending height.
