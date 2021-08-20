@@ -316,7 +316,7 @@ ui <- fluidPage(
    tags$head(HTML("<title>Flight Delays Dataset and Graphs</title>")),
 
    # Title.
-   titlePanel(h1(id = "mainHeading", icon("plane-departure"), "Flight Delays from three airports: JFK, EWR, and LGA in January, 2013", icon("plane-arrival"))),
+   titlePanel(tags$div(id = "mainHeading", icon("plane-departure"), "Flight Delays from three airports: JFK, EWR, and LGA", icon("plane-arrival"))),
 
    # All tabs.
    # By default, the first tab will be selected.
