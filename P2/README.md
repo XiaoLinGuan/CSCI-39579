@@ -24,7 +24,9 @@ install.packages("shinycustomloader")
 To check if the packages are successfully downloaded, we can type `library("name of the package")` in `Console`.  
 If the library is not successfully downloaded into the machine, the `Console` will provide an error message saying that :warning: *there is no package called 'name of the package'*.
 
-5. Copy the code from *p2.R* and paste it onto the file *app.R*, then click on `Run App`.  
+5. Download the **www** folder:file_folder: which it contains all the images and the loading.gif.
+
+6. Copy the code from *p2.R* and paste it onto the file *app.R*, then click on `Run App`.  
 We can also view the web app in a browser by clicking `Open in Browser` on the top left corner of the shiny web app window.  
 
 ### First Tab: Images:framed_picture:
