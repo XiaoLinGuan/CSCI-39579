@@ -32,7 +32,7 @@ We can also view the web app in a browser by clicking `Open in Browser` on the t
 **Default Tab**  
 User will be able to view the images of the airports and look at their exact locations on a map. 
 
-### Second Tab: Dataset
+### Second Tab: Dataset:1234:
 
 By clicking on the second tab `Dataset`, user will be able to view the dataset containing all the information used in this web app such as carriers, origin of the flight, arrival of the flight, the dates and etc.  
 User can also download the dataset by clicking `Download.csv` in the web app.
@@ -44,7 +44,7 @@ Things that the user can modify in the chart:
 * The color palette of the bars.
 * Sort the bars from ascending or descending height.
 
-### Fourth Tab: Pie Chart![piechart](<img src="https://img.icons8.com/office/16/000000/pie-chart.png"/>)
+### Fourth Tab: Pie Chart![piechart](https://img.icons8.com/office/16/000000/pie-chart.png)
 
 By clicking on the fourth tab `Pie Chart`, user will be able to compare the count of delayed flights from **departure** airports(JFK, EWR, LGA) or **arrival** airports(ATL, ORD, BOS, MCO,...).  
 Things that the user can modify in the chart:
