@@ -15,7 +15,6 @@ library(plotly)
 library(forcats)
 library(ggplot2)
 library(leaflet)
-library(RColorBrewer)
 library(shinycustomloader)
 
 # Design of the user interface.
