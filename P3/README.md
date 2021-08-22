@@ -38,4 +38,4 @@ By Clicking on the second tab `Donut Chart`, user will be able to see the percen
 By scrolling up, user will be able to see the five small widgets at the bottom of the dashboard which contains a summary from the dataset. 
 
 ### Dataset
-All the way at the bottom of the widgets are two radio buttons allowing the user to choose to view the dataset or hide the dataset.
+All the way at the bottom left corner of the dashboard, there are two radio buttons allowing the user to choose to view the dataset or hide the dataset.
