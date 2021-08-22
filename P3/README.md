@@ -35,7 +35,7 @@ By Clicking on the second tab `Donut Chart`, user will be able to see the percen
 	* StateSenatorial District - It will show the percentage of each state senatorial district  
 
 ### 5 Different widgets 
-By scrolling up, user will be able to see the five small widgets at the bottom of the chart which contains a summary from the dataset. 
+By scrolling up, user will be able to see the five small widgets at the bottom of the dashboard which contains a summary from the dataset. 
 
 ### Dataset
 All the way at the bottom of the widgets are two radio buttons allowing the user to choose to view the dataset or hide the dataset.
