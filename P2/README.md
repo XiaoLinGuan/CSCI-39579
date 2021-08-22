@@ -3,7 +3,9 @@
 
 ## Flight Delays from JFK, EWR, and LGA airports in January 2013
 
-**To use the web app, users need to follow the steps provided:** 
+***A web application showing the number of delayed flights of different airlines with a bar chart, the number of delayed flights from departure airports(JFK, EWR, LGA) or arrival airports(Other U.S. airports) with a pie chart/donut chart and the number of delayed flights from January 1st to January 31st of 2013 with a line graph.***  
+
+**To use the web app, users need to follow the steps provided:**
 1. Open Rstudio and click on `File` on the top left corner.  
 2. Click on `New Project`, then click on `New Directory`.  
 3. Click on `Shiny Web Application` and type in a new directory name.
@@ -25,9 +27,7 @@ To check if the packages are successfully downloaded, we can type `library("name
 If the library is not successfully downloaded into the machine, the `Console` will provide an error message saying that :warning: *there is no package called 'name of the package'*.
 
 5. Download **dataset.csv**.
-
 6. Download the **www** folder:file_folder: which it contains all the images and the loading.gif.
-
 7. Copy the code from *p2.R* and paste it onto the file *app.R*, then click on `Run App`.  
 We can also view the web app in a browser by clicking `Open in Browser` on the top left corner of the shiny web app window.  
 
