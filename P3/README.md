@@ -16,7 +16,7 @@ Before we do the following steps, users need to have python3 installed in their 
 6. After we install all the necessary packages, we will type `python p3.py` and hit `enter`. 
 7. If the web app runs, our terminal will display a message saying `Dash is running on http://xxxxxxx/` and we can click on the hyperlink which will open the dashboard in our browser.
 
-Each time we run the app, we would **repeat all the steps** except **step 3**.  
+Each time we run the app, we would **repeat all the steps** except **step 3**.(For Mac users, only run the Web App in terminal `python3 p3.py`.).  
 To check if flask is still in our machine, we will type `flask --version` in our terminal and hit `enter`. **If flask is in our machine, the terminal will display the message showing the current version of python and flask.**  
 
 ### Bar Plot:bar_chart:
