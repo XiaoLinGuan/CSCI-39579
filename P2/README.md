@@ -63,4 +63,7 @@ Things that the user can modify in the graph:
 * Add the data points or without the data points.
 * The color of the line and the points.
 * The size of the line and the points.
-* The shape of the line and the points.
+* The shape of the line and the points.  
+
+#### Citations:
+https://www.kaggle.com/lampubhutia/nyc-flight-data-analysis/data
